@@ -1,0 +1,7 @@
+4. úkol máte naprogramovaný správně.
+Opravil jsem Vám chybu v řešení 3. úkolu v integrační oblasti 4. části (již jsem Vás na ni upozorňoval minule).
+
+Pro univerzálnější a udržitelnější program by bylo dobré, kdybyste paralelizaci napsal univerzálněji:
+Stačila by určitě jedna funkce integrace_Pool s argumenty N, V a případně dodatečnými parametry integrované funkce.
+
+Hodnotím 10 body.

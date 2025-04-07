@@ -93,7 +93,7 @@ def I_d_dim_sphere(d, n=1000):
 
 # Problem 4
 def is_in_heart(x, y):
-    return ((x**2 + y**2 - y**3)**3 - x**2 * y**3) < 0
+    return ((x**2 + y**2 - 1)**3 - x**2 * y**3) < 0
 
 def gauss_2d(x, y):
     return np.exp(-0.5 * (x**2 + y**2)) / (2.0 * np.pi)
