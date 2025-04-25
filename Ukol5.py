@@ -100,7 +100,7 @@ def poincare(ys, ts, T):
             points.append(y)
     points = np.array(points)
     if len(points):
-        plt.plot(points[:, 0], points[:, 1], linestyle='-', linewidth=1, color=random_color())
+        plt.scatter(points[:, 0] % (2 * np.pi), points[:, 1], s=2, alpha=0.5, color=random_color())
 
 def random_color():
     return "#{:06x}".format(np.random.randint(0, 0xFFFFFF))

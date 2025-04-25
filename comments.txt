@@ -5,3 +5,25 @@ Pro univerzálnější a udržitelnější program by bylo dobré, kdybyste para
 Stačila by určitě jedna funkce integrace_Pool s argumenty N, V a případně dodatečnými parametry integrované funkce.
 
 Hodnotím 10 body.
+
+----------------------------------------------------------
+
+5. úkol máte až na drobnosti naprogramovaný správně.
+Tyto chybky však také odhalily kolegu, který Vás inspiroval, proto si dovolím naopak inspirovat sám sebe
+a přepsat Vám doslova komentáře k jeho řešení.
+
+- K lepší čitelnosti kódu by pomohlo, kdyby se parametry ve funkci diff_to_sys jmenovaly stejně, jako v zadání 
+  (tj. něco jako eta, omega, A). 
+  Funkce diff_to_sys je myslím pro řešení této úlohy až příliš obecná.
+- V té samé funkci by se spíš hodila hodnota implicitního parametru rhs=0.
+- V grafech funkce plot_results vykreslujete t versus y. 
+  Popisy os a název uloženého souboru tomu neodpovídají.
+- Lepší struktura kódu by byla nejprve vypočíst trajektorie a pak je vykreslit ve funkcích plot_results.
+  Nebo lze výstižnějši pojmenovat funkce, například calculate_and_plot_results.
+- Jeden argument funkce vykreslení Poincarého řezu je počáteční podmínka, která se ale nikde nevyužije.
+- Poincarého řez je bodový graf. Není nutné ho počítat pro všechny metody, stačí ta nepřesnější. 
+  Vzhledem k tomu, že proměnná y je úhel, je vhodné vykreslovat hodnoty mod(2 pi).
+- Oceňuji použití paralelizace. Toto je přesně typ úlohy, pro kterou je paralelní zpracování jako dělané.
+
+Vaše inspirace je do velké míry opsání (včetně oněch chybek), ale paralelizací jste mě potěšil, tak Vám dám 
+plných 10 bodů.
