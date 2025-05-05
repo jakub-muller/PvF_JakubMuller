@@ -1,0 +1,218 @@
+\documentclass{prepareprotokol} %všechny balíčky pro protokol + titulní strana
+
+\praktikum{I} %číslo praktika (I, II nebo III)
+\autor{Jakub Müller} %jméno autora
+\datum{23.4.2025} %datum měření
+\cislo{14} %číslo úlohy
+\nazev{Studium teplotní závislosti povrchového napětí} %název úlohy
+
+\begin{document}
+\maketitle
+
+\section{Pracovní úkoly}
+
+\begin{enumerate}
+  \item Změřte teplotní závislost povrchového napětí destilované vody~$\sigma$ v rozsahu teplot od $23^\circ C$ do $70^\circ C$ metodou bublin.
+  \item Měřenou závislost znázorněte graficky, do grafu vyneste chybové úsečky a tabulkové hodnoty. Závislost aproximujte kvadratickou funkcí.
+\end{enumerate}
+
+
+\section{Teorie}
+
+\subsection{Metoda bublin}
+
+Při vytlačování vzduchu z kapiláry do kapaliny působí proti vytlačování vedle hydrostatického tlaku v hloubce $h$ i povrchové napětí kapaliny na rozhraní kapalina–vzduch. Povrchové napětí $\sigma$ vytváří uvnitř kulové plochy poloměru $r$ kapilární přetlak
+\begin{equation}
+\Delta p = \frac{2\sigma}{r}.
+\end{equation}
+
+Při vzniku bubliny vytlačováním vzduchu kapilárou poloměru $r_0$ dosáhne tento kapilární přetlak maximální hodnoty v okamžiku, kdy poloměr vznikající bubliny nabývá nejmenší možné hodnoty, tj. když je shodný s poloměrem kapiláry,
+\begin{equation}
+\Delta p_{max} = \frac{2\sigma}{r_0}.
+\end{equation}
+
+Při dalším zvětšování poloměru bubliny kapilární tlak klesá, bublina se začne samovolně rozpínat, odtrhne se od kapiláry a vypluje na hladinu.
+
+Bubliny se začnou tvořit a z kapiláry unikat, stoupne-li tlak vzduchu v kapiláře vzhledem k tlaku vzduchu u hladiny kapaliny o hodnotu
+\begin{equation}
+\Delta p_{max} = \frac{2\sigma}{r_0} + \rho g h,
+\end{equation}
+kde $g$ je tíhové zrychlení a $\rho$ hustota měřené kapaliny.
+
+\subsection*{Měřicí zařízení}
+
+Měřená kapalina je v měrné nádobce $N$. Kapilára $K$ spojená s vnějším prostorem je zavedena těsně pod hladinu měřené kapaliny. Prostor nad měřenou kapalinou je spojen s prostorem nad hladinou vody v nádobě $A$ (aspirátoru) a se skloněným ramenem mikromanometru $M$, je však při měření oddělen od vnějšího prostoru. Tlak vzduchu nad měřenou kapalinou lze snižovat oproti tlaku ve vnějším prostoru vypouštěním vody z aspirátoru. Odtok vody a tím i změna tlaku je jemně regulovatelná přítlačnou svorkou $PS$ na odtokové hadičce.
+
+Mikromanometrem $M$ naplněným destilovanou vodou se měří tlakový rozdíl $\Delta p$ a výpočet povrchového napětí se provádí na základě rovnice~(3), ve které lze při vhodném nastavení kapiláry a volbě jejího průměru zanedbat hydrostatický tlak vzhledem k hodnotě přetlaku způsobeného povrchovým napětím. Citlivost mikromanometru lze zvětšit skloněním manometrické trubice. Konstrukce umožňuje sklony charakterizované těmito hodnotami $\sin\alpha$: $1, 1/2, 1/3, 1/4$. Měřený tlakový rozdíl určíme z výšky vodního sloupce $d_{max}$ v mikromanometru podle
+\begin{equation}
+\Delta p_{max} = d_{max} \rho' g \sin\alpha,
+\end{equation}
+kde $\rho'$ je hustota vody v mikromanometru, tedy při laboratorní teplotě.
+
+Měrná nádobka je ponořena do vodou plněné nádoby magnetické míchačky $MM$, umožňující ohřívání měřené kapaliny. Teplota kapaliny se měří kapalinovým teploměrem $T$.
+
+Vztahy v sekci teorie, instrukce pro měření s aparaturou a obrázek 1 byly převzaty ze zdroje
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{aparatura.png}
+    \caption{Obrázek 1: Aparatura pro měření povrchového napětí metodou bublin.}
+    \label{fig:aparatura}
+\end{figure}
+\vspace{100px}
+
+\section{Výsledky měření}
+
+\subsection{Experimentální podmínky}
+Měření bylo realizováno v budově MFF UK na Karlově 3. Okolní podmínky byly změřeny přístrojem Commeter C4130 jako následující: teplota vzduchu $t = 24{,}8(4)\,^\circ\mathrm{C}$, relativní vlhkost $\Phi = 31(3)\,\%$, atmosférický tlak $p = 989(2)\,\mathrm{hPa}$. Hustota vody byla zjištěna dle tabulkových hodnot odpovídajících změřené teplotě a činila $\rho = 997{,}1\,\mathrm{kg/m^3}$. Hodnota tíhového zrychlení byla uvažována jako standardní: $g = 9{,}81\,\mathrm{m/s^2}$.
+
+\subsection{Měření závislosti povrchového napětí na teplotě}
+
+Pro zvýšení přesnosti odečtů byl mikromanometr nastaven tak, aby $\sin\alpha = \frac{1}{2}$. V dokumentaci uvedený průměr kapiláry byl $d_0 = 0{,}52(2)\,\mathrm{mm}$. Poloměr byl dále vypočten standardně jako polovina průměru, jeho odchylka adekvátně upravena.
+
+Postupně byl zahříván vzorek destilované vody a vždy po ohřátí o $2^\circ C$ byla zaznamenána výška sloupce vytlačené vody v mikromanometru. Nejistoty jednotlivých měření byly stanoveny dle nejmenších dílků měřidel: $\sigma_t = 0{,}5\,^\circ\mathrm{C}$ pro teplotu a $\sigma_h = 1\,\mathrm{mm}$ pro výšku sloupce.
+
+\begin{table}[h!]
+\centering
+\caption{Tabulka 1: Teplotní závislost hladiny manometru a vypočteného povrchového napětí}
+
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{$T$ [$^\circ$C]} & \textbf{$d$ [mm]} & \textbf{$\sigma$ [N/m]} \\
+\hline
+20{,}0(5) & 0{,}107(1) & 0{,}0680(3) \\
+22{,}0(5) & 0{,}107(1) & 0{,}0680(3) \\
+25{,}0(5) & 0{,}106(1) & 0{,}0674(3) \\
+27{,}0(5) & 0{,}105(1) & 0{,}0668(3) \\
+29{,}0(5) & 0{,}105(1) & 0{,}0668(3) \\
+31{,}0(5) & 0{,}104(1) & 0{,}0661(3) \\
+33{,}0(5) & 0{,}103(1) & 0{,}0655(3) \\
+35{,}0(5) & 0{,}103(1) & 0{,}0655(3) \\
+37{,}0(5) & 0{,}102(1) & 0{,}0648(3) \\
+39{,}0(5) & 0{,}101(1) & 0{,}0642(3) \\
+41{,}0(5) & 0{,}101(1) & 0{,}0642(3) \\
+43{,}0(5) & 0{,}100(1) & 0{,}0636(3) \\
+44{,}0(5) & 0{,}099(1) & 0{,}0630(3) \\
+46{,}0(5) & 0{,}099(1) & 0{,}0630(3) \\
+48{,}0(5) & 0{,}098(1) & 0{,}0623(2) \\
+50{,}0(5) & 0{,}098(1) & 0{,}0623(2) \\
+52{,}0(5) & 0{,}098(1) & 0{,}0623(2) \\
+54{,}0(5) & 0{,}097(1) & 0{,}0617(2) \\
+56{,}0(5) & 0{,}097(1) & 0{,}0617(2) \\
+58{,}0(5) & 0{,}096(1) & 0{,}0610(2) \\
+60{,}0(5) & 0{,}095(1) & 0{,}0604(2) \\
+62{,}0(5) & 0{,}094(1) & 0{,}0598(2) \\
+64{,}0(5) & 0{,}094(1) & 0{,}0598(2) \\
+66{,}0(5) & 0{,}093(1) & 0{,}0591(2) \\
+68{,}0(5) & 0{,}093(1) & 0{,}0591(2) \\
+70{,}0(5) & 0{,}092(1) & 0{,}0585(2) \\
+\hline
+\end{tabular}
+\end{table}
+
+Výpočet povrchového napětí byl proveden dle vztahu (5), odvozeného ze vztahů (2,4):
+
+\begin{equation}
+\sigma = \frac{1}{2} \rho g h r_0 \sin\alpha,
+\end{equation}
+
+kde $r_0$ je poloměr kapiláry. Nejistota $\sigma_\sigma$ pak vychází ze vztahu pro přenos chyb:
+
+\begin{equation}
+\sigma_\sigma = \frac{1}{2} \rho g h r_0 \sin\alpha \cdot 
+\sqrt{
+\left(\frac{\sigma_{r_0}}{r_0}\right)^2 +
+\left(\frac{\sigma_\rho}{\rho}\right)^2 +
+\left(\frac{\sigma_h}{h}\right)^2
+}.
+\end{equation}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{napeti.png}
+    \caption{Graf 1: Závislost povrchového napětí destilované vody na teplotě}
+    \label{fig:napeti}
+\end{figure}
+
+Naměřené hodnoty byly vyneseny do grafu 1 a tabulky 1, přičemž byl graf doplněn tabulkovými hodnotami \cite{tabulky1980}
+ pro měřenou závislost. Porovnání těchto tabulkových hodnot a naměřených hodnot provedu v sekci diskuze. Naměřené hodnoty byly dále nafitovány kvadratickou funkcí ve tvaru (7), bylo zobrazeno i pásmo jeho nejistoty $1\sigma$, určeno z nejistot jednotlivých měření. 
+
+\begin{equation}
+\sigma(t) =A t^2 + B t + C,
+\end{equation}
+
+\vspace{1000px}
+
+kde fitované parametry byly vypočítány jako:
+
+\begin{equation}
+a = (3{,}02 \pm 2{,}30) \cdot 10^{-7}\ \mathrm{\frac{N}{m\,^\circ C^2}}
+\end{equation}
+
+\begin{equation}
+b = (-2{,}21 \pm 2{,}00) \cdot 10^{-4}\ \mathrm{\frac{N}{m\,^\circ C}}
+\end{equation}
+
+\begin{equation}
+c = (7{,}26 \pm 0{,}43) \cdot 10^{-2}\ \mathrm{\frac{N}{m}}
+\end{equation}
+
+
+
+
+\section{Diskuze}
+
+Z grafu 1 je patrné, že naměřené hodnoty sice následují stejný trend, jako tabulkové hodnoty, tedy pokles, který se jeví téměř lineárně, je však třeba zdůvodnit zřejmou odchylku měření od tabulkových hodnot. Konstantní charakter rozdílu těchto dvou křivek nás přivádí k nějaké systematické chybě. Proto připisuji tuto odchylku od tabelizovaných hodnot nesprávné velikosti bublin vycházejících z kapiláry. Ze vztahu (5) je zřejmé, že pokud by poloměr bublin neodpovídal poloměru kapiláry, celá křivka závislosti by byla kvůli její téměř lineární podobě zdánlivě posunuta. Tvrdím, že právě tento problém během měření nastal. Už při provádění experimentu bylo možné vidět, že bubliny z kapiláry vycházely sice periodicky, ne však ustáleně. Vždy v intervalech několika sekund z kapiláry vystoupilo několik bublin najednou, což není přesně v souladu se zadáním, viz sekce teorie. Pokud bychom tedy více dbali na přesnější následování instrukcí během nastavování experimentu, mohli jsme tuto odchylku od tabelizovaných hodnot eliminovat. Pro ilustraci jsem si dovolil zkonstruovat podobný graf, tentokrát pro $r=0,28(1) \:mm$. V tomto grafu 2 můžeme pozorovat velkou podobnost mezi tabelizovanými hodnotami a měřením pro toto upravené $r$. Zřejmě je odchylka měření od tabulkových hodnot v pásmu chyby měření. 
+
+Nabízí se také zdůvodnění, že je tato odchylka způsobena nezapočítaným hydrostatickým tlakem. To však považuji za silně nepravděpodobné, jelikož byla kapilára do vodní hladiny ponořena opravdu přesně, hydrostatický tlak by byl tím pádem v takto nízké hloubce zanedbatelný. 
+
+Dále mohla být drobná chyba způsobena rozdílem mezi teplotou odečítanou z teploměru a reálnou teplotou vody v aparatuře. Je možné, že za dobu ohřívání teploměru na odečítanou hodnotu byla voda opět zahřáta na vyšší teplotu, tedy by mezi hodnotou ve výpočtech a realitou mohl být drobný rozdíl. Bohužel však nemáme možnost ověřit míru tohoto efektu. Oproti relativně vysoké nejistotě měření však tento efekt považuji za zanedbatelný. 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{napeti2.png}
+    \caption{Graf 1: Závislost pro upravené $r$}
+    \label{fig:napeti}
+\end{figure}
+
+\section{Závěr}
+
+V tomto experimentu jsme změřili teplotní závislost povrchového napětí destilované vody v rozsahu $20{-}70\,^\circ\mathrm{C}$ metodou bublin. Naměřená závislost byla vynesena do grafu a úspěšně aproximována kvadratickou funkcí ve tvaru $\sigma(t) = at^2 + bt + c$. Parametry fitu vyšly: 
+\[
+a = (3{,}02 \pm 2{,}30) \cdot 10^{-7}\ \mathrm{\frac{N}{m\,^\circ C^2}},\quad
+b = (-2{,}21 \pm 2{,}00) \cdot 10^{-4}\ \mathrm{\frac{N}{m\,^\circ C}},\quad
+c = (7{,}26 \pm 0{,}43) \cdot 10^{-2}\ \mathrm{\frac{N}{m}}.
+\]
+Měřené hodnoty vykazují očekávaný trend klesající viskozity s rostoucí teplotou a tvar závislosti odpovídá literatuře. Úkoly byly splněny včetně grafické prezentace dat s chybami a porovnání s tabulkovými hodnotami.
+
+
+\vspace{1000px}
+
+
+\section{Zdroje}
+
+\begin{thebibliography}{9}
+\bibitem{broz1967}
+J. Brož a kol.: \textit{Základy fyzikálních měření I.} SPN, Praha 1967, st. 2.5.4, čl. 2.5.1.1.
+
+\bibitem{broz1983}
+J. Brož a kol.: \textit{Základy fyzikálních měření I.} SPN, Praha 1983, čl. 2.4.1.1, čl. 2.4.4.4., st. 2.4.4.
+
+\bibitem{tabulky1980}
+J. Brož, V. Roskovec, M. Valouch: \textit{Fyzikální a matematické tabulky.} SNTL, Praha 1980.
+
+\bibitem{veis1981}
+Š. Veis, J. Maďar, V. Martišovitš: \textit{Mechanika a molekulová fyzika}, ALFA, Bratislava, 1981, kap. 14.3.
+
+\bibitem{zadani114}
+MFF UK. \textit{Zadání úlohy č. 114 – Studium teplotní závislosti povrchového napětí.} Dostupné online:  
+\url{https://physics.mff.cuni.cz/vyuka/zfp/_media/zadani/texty/txt_114.pdf} [cit. 2025-04-24]
+\end{thebibliography}
+
+
+
+
+
+\end{document}
+
+
