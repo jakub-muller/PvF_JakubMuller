@@ -27,3 +27,18 @@ a přepsat Vám doslova komentáře k jeho řešení.
 
 Vaše inspirace je do velké míry opsání (včetně oněch chybek), ale paralelizací jste mě potěšil, tak Vám dám 
 plných 10 bodů.
+
+----------------------------------------------------------
+V 6. úkolu je opět zřejmá spolupráce s kolegou, proto si dovolím překopírovat i komentáře
+k problematickým bodům Vašeho řešení. Kolegovi jsem některé části kódu upravil, aby dávaly správný
+výsledek. Váš kód jsem nechal tak, jak jste ho poslal.
+
+- Ve výpočtu zůstává okraj řešené oblasti konstantní v průběhu celého výpočtu.
+  Pro nápravu je nutné buď počítat okrajové body speciálně (vzoreček je analogický vnitřku oblasti 
+  - hodnota bodu je průměrem hodnot bodů v okolí), nebo zavést periodické okrajové podmínky.
+
+  Aby úloha dávala fyzikální smysl, měly by být osoba i hromosvod spojené se zemí.
+
+  Elektrické pole je zajímavé vykreslit hlavně pro případy s osobou a s hromosvodem.
+
+Za řešení Vám dávám 8 bodů.
