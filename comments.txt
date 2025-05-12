@@ -42,3 +42,24 @@ výsledek. Váš kód jsem nechal tak, jak jste ho poslal.
   Elektrické pole je zajímavé vykreslit hlavně pro případy s osobou a s hromosvodem.
 
 Za řešení Vám dávám 8 bodů.
+
+----------------------------------------------------------
+Několik komentářů a doporučení k Vašemu úkolu na psaní v LaTeXu (7. úkol).
+- Je dobré se přesvědčit, že k úkolu dodáváte všechny potřebné soubory. Ve Vašem případě chybí soubor
+  prepareprotocol.cls a další soubory pro styl "Protokol z praktik" (ty se mi všechny podařilo stáhnout), ale
+  také Vaše obrázky aparatura.png, napeti.png.
+
+- Naučte se používat odkazy na rovnice pomocí labelů, tj. rovnici označíte \label{maxtlak} a pak se na ni
+  v textu odkazujete \eqref{maxtlak}. Váš způsob jde proti duchu LaTeXu a je neudržitelný v případě větších
+  projektů; pokud budete totiž chtít přidat novou rovnici, musíte všechny následující rovnice a odkazy na ně ručně
+  přečíslovat. Totéž platí pro obrázky.
+- Na konci 1. stránky Vám asi chybí zdroj.
+- Tabulky se číslují automaticky, není tedy nutné psát znovu do popisku "Tabulka 1".
+- Běžně je zvykem uvádět jen ty zdroje, na které se v textu odkazujete. Vy se odkazujete jen na tabulky1980.
+
+- Jednotky se obvykle zapisují vzpřímeným písmem. Někde to tak máte (hPa, kg), občas však ne. Buďte konzistentní.
+  Správně tedy "...v rozsahu teplot od $23^\circ\mathrm{C}$ do $70^\circ\mathrm{C}$".
+- Vícepísmenná označení veličin se obvykle zapisují vzpřímeným písmem, tj. například $p_{\mathrm{max}}$
+  (aby se graficky odlišilo od proměnné p s indexy m, a, x).
+
+Vzhledem k chybám, které jdou proti zadání tohoto úkolu, hodnotím vypracování 6 body.
