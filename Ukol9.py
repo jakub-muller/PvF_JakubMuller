@@ -1,3 +1,9 @@
+""" Díky za poslední úkol. Vše je perfektní, jen pro log-log graf a následný fit je nutné odstranit stejnosměrnou
+    komponentu (komponenta s nulovou frekvencí).
+  
+    Za Vaše řešení dávám 10 bodů.
+"""
+
 # TASK 1: DFT, IDFT and amplitude spectrum functions
 
 import numpy as np
@@ -87,6 +93,8 @@ for omega_b in omega_bs:
 # Log-log graph for chaotic case (ω_b = 0.5 rad/s)
 f, S = results[0.5]
 mask = f < 200
+#PS
+mask &= f > 0
 fk = f[mask]
 Sk = S[mask]
 
